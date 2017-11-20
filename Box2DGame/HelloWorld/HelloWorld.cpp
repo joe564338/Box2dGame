@@ -48,7 +48,7 @@ int main(int argc, char** argv)
 	// Define the ground box shape.
 	b2PolygonShape groundBox;
 
-	// The extents are the half-widths of the box.
+	// The extents are the half-widths of the box. 
 	groundBox.SetAsBox(50.0f, 10.0f);
 
 	// Add the ground fixture to the ground body.
