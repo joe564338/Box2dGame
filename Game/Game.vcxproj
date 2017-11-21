@@ -105,7 +105,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\VS projects\Box2DGame\Game\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\VS projects\Box2DGame\Box2DGame\x64\Debug;F:\VS projects\Box2DGame\Game\include;F:\VS projects\Box2DGame\Box2DGame\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -156,6 +156,7 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
@@ -165,6 +166,55 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="..\Box2DGame\x64\Debug\b2BlockAllocator.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Body.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2BroadPhase.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2ChainAndCircleContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2ChainAndPolygonContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2ChainShape.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2CircleContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2CircleShape.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2CollideCircle.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2CollideEdge.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2CollidePolygon.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Collision.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Contact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2ContactManager.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2ContactSolver.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Distance.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2DistanceJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Draw.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2DynamicTree.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2EdgeAndCircleContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2EdgeAndPolygonContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2EdgeShape.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Fixture.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2FrictionJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2GearJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Island.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Joint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Math.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2MotorJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2MouseJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2PolygonAndCircleContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2PolygonContact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2PolygonShape.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2PrismaticJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2PulleyJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2RevoluteJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Rope.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2RopeJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Settings.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2StackAllocator.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2TimeOfImpact.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2Timer.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2WeldJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2WheelJoint.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2World.obj" />
+    <Object Include="..\Box2DGame\x64\Debug\b2WorldCallbacks.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
